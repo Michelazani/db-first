@@ -1,0 +1,17 @@
+nome tabella: auto
+
+id - intero - mediumInt - primary-key - unique - auto_increment - not null
+numero_di_telaio - stringa - varchar(17) - unique - not null 
+numero_telaio_motore - stringa - varchar(17) - unique - not null 
+modello - stringa - varchar(50) - not null - 
+anno_di_produzione - data - year - null 
+anno_di_immatricolazione - data - year - null 
+alimentazione - stringa - varchar(20) - not null 
+cambio - valore booleano - tinyInt booleano - not null
+potenza - stringa - varchar(10) - 
+cilindrata - stringa - varchar(7)
+dimensione - stringa - varchar(20) -
+targa - stringa - varchar(10) - unique - not null
+posti - stringa - varchar(2) - 
+porte - stringa - varchar(2) -
+colore - stringa - varchar(15) -
