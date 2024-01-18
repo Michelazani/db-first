@@ -8,10 +8,10 @@ anno_di_produzione - data - year - null
 anno_di_immatricolazione - data - year - null 
 alimentazione - stringa - varchar(20) - not null 
 cambio - valore booleano - tinyInt booleano - not null
-potenza - stringa - varchar(10) - 
-cilindrata - stringa - varchar(7)
-dimensione - stringa - varchar(20) -
+potenza - stringa - varchar(10) - not null
+cilindrata - stringa - varchar(7) - not null
+dimensione - stringa - varchar(20) - null
 targa - stringa - varchar(10) - unique - not null
-posti - stringa - varchar(2) - 
-porte - stringa - varchar(2) -
-colore - stringa - varchar(15) -
+posti - stringa - varchar(2) - not null
+porte - stringa - varchar(2) - not null
+colore - stringa - varchar(15) - null
