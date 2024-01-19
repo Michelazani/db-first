@@ -1,17 +1,20 @@
 nome tabella: auto
 
-id - intero - mediumInt - primary-key - unique - auto_increment - not null
-numero_di_telaio - stringa - varchar(17) - unique - not null 
-numero_telaio_motore - stringa - varchar(17) - unique - not null 
-modello - stringa - varchar(50) - not null - 
-anno_di_produzione - data - year - null 
-anno_di_immatricolazione - data - year - null 
-alimentazione - stringa - varchar(20) - not null 
-cambio - valore booleano - tinyInt booleano - not null
-potenza - stringa - varchar(10) - not null
-cilindrata - stringa - varchar(7) - not null
-dimensione - stringa - varchar(20) - null
-targa - stringa - varchar(10) - unique - not null
-posti - stringa - varchar(2) - not null
-porte - stringa - varchar(2) - not null
-colore - stringa - varchar(15) - null
+id                      - intero - mediumInt - unsigned - primary-key - unique - auto_increment - not null
+numero_di_telaio        - stringa - varchar(17) - unique - not null 
+numero_telaio_motore    - stringa - varchar(17) - unique - not null 
+modello                 - stringa - varchar(50) - not null  
+anno_di_produzione      - data - year - not null 
+anno_di_immatricolazione - data - date - null 
+alimentazione           - stringa - varchar(20) - not null 
+cambio                  - stringa - varchar(20) - not null
+potenza                 - intero - smallint - unsigned - not null
+cilindrata              - intero - smallint - unsigned - not null
+dimensione              - stringa - varchar(20) - null
+targa                   - stringa - varchar(10) - unique - not null
+posti                   - intero- tinyInt - unsigned - not null - default(4)
+porte                   - intero- tinyInt - unsigned - not null - default(4)
+colore                  - stringa - varchar(15) - null
+km                      - intero - mediumInt - unsigned - null
+prezzo                  - float - decimal(9,2) - null
+
